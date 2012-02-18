@@ -9,9 +9,9 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 */
 
 $sum = 0;
-for ($i = 0; $i < 1000; $i += 1) {
-    if ($i % 3 === 0 or $i % 5 === 0) {
-        $sum += $i;
+for ($n = 0; $n < 1000; $n += 1) {
+    if ($n % 3 === 0 or $n % 5 === 0) {
+        $sum += $n;
     }
 }
 echo $sum . "\n";
