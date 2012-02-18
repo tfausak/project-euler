@@ -1,2 +1,4 @@
-*.pyc
 *.class
+*.hi
+*.o
+*.pyc
