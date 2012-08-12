@@ -7,7 +7,7 @@
 # 2 <= a <= 100 and 2 <= b <= 100. Any number n can be expressed as the
 # product of its prime factors (i.e., n = p1^v1 * p2^v2 ...). n^c is then
 # given by
-# 	n^c = p1^(v1 * c) * p2^(v2 * c) * ...
+#   n^c = p1^(v1 * c) * p2^(v2 * c) * ...
 # Using this as a string key for a hash of boolean values quickly gives the
 # number of unique terms.
 
@@ -18,31 +18,31 @@ my $limit = 100;
 my %terms;
 
 for (my $a = 2; $a <= $limit; $a++) {
-	my %factors = factor($a);
+    my %factors = factor($a);
 
-	for (my $b = 2; $b <= $limit; $b++) {
-		my $factorization;
+    for (my $b = 2; $b <= $limit; $b++) {
+        my $factorization;
 
-		while (my ($k, $v) = each(%factors)) {
-			$factorization .= $k . '^' . ($v * $b) . ' ';
-		}
+        while (my ($k, $v) = each(%factors)) {
+            $factorization .= $k . '^' . ($v * $b) . ' ';
+        }
 
-		$terms{$factorization} = 1;
-	}
+        $terms{$factorization} = 1;
+    }
 }
 
 print keys(%terms) . "\n";
 
 sub factor {
-	my $n = $_[0];
-	my %factors;
+    my $n = $_[0];
+    my %factors;
 
-	for (my $factor = 2; $n > 1; $factor++) {
-		while ($n % $factor == 0) {
-			$n /= $factor;
-			$factors{"$factor"}++;
-		}
-	}
-	
-	return %factors;
+    for (my $factor = 2; $n > 1; $factor++) {
+        while ($n % $factor == 0) {
+            $n /= $factor;
+            $factors{"$factor"}++;
+        }
+    }
+    
+    return %factors;
 }

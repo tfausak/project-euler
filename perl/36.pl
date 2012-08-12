@@ -14,17 +14,17 @@ my $limit = 1000000;
 my $sum = 0;
 
 for (my $n = 1; $n <= $limit; $n += 2) {
-	if ($n != reverse($n)) {
-		next;
-	}
+    if ($n != reverse($n)) {
+        next;
+    }
 
-	my $b = sprintf("%b", $n);
+    my $b = sprintf("%b", $n);
 
-	if ($b != reverse($b)) {
-		next;
-	}
+    if ($b != reverse($b)) {
+        next;
+    }
 
-	$sum += $n;
+    $sum += $n;
 }
 
 print $sum . "\n";

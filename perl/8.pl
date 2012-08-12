@@ -16,22 +16,22 @@ my $n = '';
 open(INPUT, '<', $ARGV[0]) or die $!;
 
 while (my $line = <INPUT>) {
-	$line =~ s/^\s*(\d+)\s*$/$1/; # trim whitespace
-	$n .= $line;
+    $line =~ s/^\s*(\d+)\s*$/$1/; # trim whitespace
+    $n .= $line;
 }
 
 close(INPUT) or die $!;
 
 for (my $offset = 0; $offset < length($n) - $length; $offset++) {
-	my $product = 1;
-	
-	foreach my $digit (split('', substr($n, $offset, $length))) {
-		$product *= $digit;
-	}
-	
-	if ($product > $max) {
-		$max = $product;
-	}
+    my $product = 1;
+    
+    foreach my $digit (split('', substr($n, $offset, $length))) {
+        $product *= $digit;
+    }
+    
+    if ($product > $max) {
+        $max = $product;
+    }
 }
 
 print $max . "\n";

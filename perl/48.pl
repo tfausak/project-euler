@@ -15,14 +15,14 @@ my $digits = 10;
 my $sum = 0;
 
 foreach my $n (1 .. $limit) {
-	my $nn = 1; # $nn is n^n
+    my $nn = 1; # $nn is n^n
 
-	foreach (1 .. $n) {
-		$nn *= $n;
-		$nn = substr($nn, -1 * $digits);
-	}
+    foreach (1 .. $n) {
+        $nn *= $n;
+        $nn = substr($nn, -1 * $digits);
+    }
 
-	$sum += $nn;
+    $sum += $nn;
 }
 
 print substr($sum, -1 * $digits);

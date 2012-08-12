@@ -14,59 +14,59 @@ my %pandigitals;
 my $sum = 0;
 
 A: foreach my $a (1 .. 99) {
-	B: foreach my $b (100 .. 9999) {
-		my $p = $a * $b;
+    B: foreach my $b (100 .. 9999) {
+        my $p = $a * $b;
 
-		if ($p < 1000) {
-			next B;
-		}
+        if ($p < 1000) {
+            next B;
+        }
 
-		if ($p > 9999) {
-			next A;
-		}
+        if ($p > 9999) {
+            next A;
+        }
 
-		my $n = $a . $b . $p;
+        my $n = $a . $b . $p;
 
-		if (length($n) != 9 || !pandigital($n)) {
-			next;
-		}
+        if (length($n) != 9 || !pandigital($n)) {
+            next;
+        }
 
-		print "$a\t* $b\t= $p\n";
+        print "$a\t* $b\t= $p\n";
 
-		$pandigitals{$p}++;
-	}
+        $pandigitals{$p}++;
+    }
 }
 
 while (my ($p, $count) = each(%pandigitals)) {
-	$sum += $p;
+    $sum += $p;
 }
 
 print $sum . "\n";
 
 sub pandigital {
-	my $n = $_[0];
-	my $length = length($n);
+    my $n = $_[0];
+    my $length = length($n);
 
-	if ($length < 1 || $length > 9) {
-		return 0;
-	}
+    if ($length < 1 || $length > 9) {
+        return 0;
+    }
 
-	my %digits;
+    my %digits;
 
-	while ($n >= 1) {
-		$digits{$n % 10}++;
-		$n /= 10;
-	}
+    while ($n >= 1) {
+        $digits{$n % 10}++;
+        $n /= 10;
+    }
 
-	if ($length != keys(%digits)) {
-		return 0;
-	}
+    if ($length != keys(%digits)) {
+        return 0;
+    }
 
-	while (my ($digit, $count) = each(%digits)) {
-		if ($digit < 1 || $digit > $length || $count > 1) {
-			return 0;
-		}
-	}
+    while (my ($digit, $count) = each(%digits)) {
+        if ($digit < 1 || $digit > $length || $count > 1) {
+            return 0;
+        }
+    }
 
-	return 1;
+    return 1;
 }

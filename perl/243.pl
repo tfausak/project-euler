@@ -17,80 +17,80 @@ my @primes = sieve(245044800);
 print $#primes . "\n";
 
 sub sieve {
-	my $limit = $_[0];
-	my $sieve_bound = ($limit - 1) / 2;
-	my $cross_limit = (sqrt($limit) - 1) / 2;
-	my @sieve;
-	my @primes = (2);
+    my $limit = $_[0];
+    my $sieve_bound = ($limit - 1) / 2;
+    my $cross_limit = (sqrt($limit) - 1) / 2;
+    my @sieve;
+    my @primes = (2);
 
-	foreach my $i (1 .. $cross_limit) {
-		if (defined($sieve[$i])) {
-			next;
-		}
+    foreach my $i (1 .. $cross_limit) {
+        if (defined($sieve[$i])) {
+            next;
+        }
 
-		for (my $j = 2 * $i * ($i + 1); $j <= $sieve_bound; $j += 2 * $i + 1) {
-			$sieve[$j] = 1;
-		}
-	}
+        for (my $j = 2 * $i * ($i + 1); $j <= $sieve_bound; $j += 2 * $i + 1) {
+            $sieve[$j] = 1;
+        }
+    }
 
-	for (my $i = 1; $i <= $sieve_bound; $i++) {
-		if (defined($sieve[$i])) {
-			next;
-		}
+    for (my $i = 1; $i <= $sieve_bound; $i++) {
+        if (defined($sieve[$i])) {
+            next;
+        }
 
-		push(@primes, 2 * $i + 1);
-	}
+        push(@primes, 2 * $i + 1);
+    }
 
-	return @primes;
+    return @primes;
 }
 
 sub factor {
-	my $n = $_[0];
-	my %factors;
+    my $n = $_[0];
+    my %factors;
 
-	for (my $factor = 2; $n > 1; $factor++) {
-		while ($n % $factor == 0) {
-			$n /= $factor;
-			$factors{$factor}++;
-		}
-	}
-	
-	return %factors;
+    for (my $factor = 2; $n > 1; $factor++) {
+        while ($n % $factor == 0) {
+            $n /= $factor;
+            $factors{$factor}++;
+        }
+    }
+    
+    return %factors;
 }
 
 sub resilience {
-	my $d = $_[0];
-	my $r = 0;
+    my $d = $_[0];
+    my $r = 0;
 
-	foreach my $n (1 .. $d - 1) {
-		if (is_resilient($n, $d)) {
-			$r++;
-		}
-	}
+    foreach my $n (1 .. $d - 1) {
+        if (is_resilient($n, $d)) {
+            $r++;
+        }
+    }
 
-	return $r;
+    return $r;
 }
 
 sub is_resilient {
-	my ($n, $d) = @_;
+    my ($n, $d) = @_;
 
-	if (gcd($n, $d) != 1) {
-		return undef;
-	}
+    if (gcd($n, $d) != 1) {
+        return undef;
+    }
 
-	return 1;
+    return 1;
 }
 
 sub gcd {
-	my ($a, $b) = @_;
+    my ($a, $b) = @_;
 
-	if ($a == 0 || $b == 0) {
-		return $a | $b;
-	}
+    if ($a == 0 || $b == 0) {
+        return $a | $b;
+    }
 
-	while ($b != 0) {
-		($a, $b) = ($b, $a % $b);
-	}
+    while ($b != 0) {
+        ($a, $b) = ($b, $a % $b);
+    }
 
-	return $a;
+    return $a;
 }

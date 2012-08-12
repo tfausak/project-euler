@@ -16,12 +16,12 @@ my $factorial = 1;
 my $sum = 0;
 
 for (my $n = 2; $n <= $limit; $n++) {
-	$factorial *= $n;
+    $factorial *= $n;
 }
 
 while ($factorial >= 1) {
-	$sum += $factorial % 10;
-	$factorial /= 10;
+    $sum += $factorial % 10;
+    $factorial /= 10;
 }
 
 print $sum . "\n";

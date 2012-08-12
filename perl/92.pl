@@ -8,40 +8,40 @@ my %last;
 my $count = 0;
 
 foreach my $n (1 .. $limit) {
-	my $term = $n;
-	my @chain;
+    my $term = $n;
+    my @chain;
 
-	while ($term != 1 && $term != 89) {
-		if (defined($last{$term})) {
-			$term = $last{$term};
+    while ($term != 1 && $term != 89) {
+        if (defined($last{$term})) {
+            $term = $last{$term};
 
-			last;
-		}
+            last;
+        }
 
-		push(@chain, $term);
+        push(@chain, $term);
 
-		$term = square_of_digits($term);
-	}
+        $term = square_of_digits($term);
+    }
 
-	if ($term == 89) {
-		$count++;
-	}
+    if ($term == 89) {
+        $count++;
+    }
 
-	foreach my $y (@chain) {
-		$last{$y} = $term;
-	}
+    foreach my $y (@chain) {
+        $last{$y} = $term;
+    }
 }
 
 print $count . "\n";
 
 sub square_of_digits {
-	my $n = $_[0];
-	my $sum = 0;
+    my $n = $_[0];
+    my $sum = 0;
 
-	while ($n >= 1) {
-		$sum += ($n % 10) ** 2;
-		$n = int($n / 10);
-	}
+    while ($n >= 1) {
+        $sum += ($n % 10) ** 2;
+        $n = int($n / 10);
+    }
 
-	return $sum;
+    return $sum;
 }

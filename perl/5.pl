@@ -15,31 +15,31 @@ my %factors;
 my $result = 1;
 
 for (my $n = 1; $n <= $limit; $n++) {
-	my %f = factor($n);
+    my %f = factor($n);
 
-	while (my ($factor, $power) = each(%f)) {
-		if (!defined($factors{$factor}) || $power > $factors{$factor}) {
-			$factors{$factor} = $power;
-		}
-	}
+    while (my ($factor, $power) = each(%f)) {
+        if (!defined($factors{$factor}) || $power > $factors{$factor}) {
+            $factors{$factor} = $power;
+        }
+    }
 }
 
 while (my ($factor, $power) = each(%factors)) {
-	$result *= $factor ** $power;
+    $result *= $factor ** $power;
 }
 
 print $result . "\n";
 
 sub factor {
-	my $n = $_[0];
-	my %factors;
+    my $n = $_[0];
+    my %factors;
 
-	for (my $factor = 2; $n > 1; $factor++) {
-		while ($n % $factor == 0) {
-			$n /= $factor;
-			$factors{$factor}++;
-		}
-	}
-	
-	return %factors;
+    for (my $factor = 2; $n > 1; $factor++) {
+        while ($n % $factor == 0) {
+            $n /= $factor;
+            $factors{$factor}++;
+        }
+    }
+    
+    return %factors;
 }

@@ -21,50 +21,50 @@ my @primes = reverse(sieve($limit));
 my $d = 0;
 
 foreach my $p (@primes) {
-	my %tmp;
+    my %tmp;
 
-	foreach my $k (1 .. $p - 1) {
-		my $mod = (10 ** $k) % $p;
+    foreach my $k (1 .. $p - 1) {
+        my $mod = (10 ** $k) % $p;
 
-		if (defined($tmp{$mod})) {
-			last;
-		}
+        if (defined($tmp{$mod})) {
+            last;
+        }
 
-		$tmp{$mod} = 1;
-	}
+        $tmp{$mod} = 1;
+    }
 
-	if (keys(%tmp) == $p - 1) {
-		$d = $p;
-		last;
-	}
+    if (keys(%tmp) == $p - 1) {
+        $d = $p;
+        last;
+    }
 }
 
 print $d . "\n";
 
 sub sieve {
-	my $limit = $_[0];
-	my $sieve_bound = ($limit - 1) / 2;
-	my $cross_limit = (sqrt($limit) - 1) / 2;
-	my @sieve;
-	my @primes = (2);
+    my $limit = $_[0];
+    my $sieve_bound = ($limit - 1) / 2;
+    my $cross_limit = (sqrt($limit) - 1) / 2;
+    my @sieve;
+    my @primes = (2);
 
-	foreach my $i (1 .. $cross_limit) {
-		if (defined($sieve[$i])) {
-			next;
-		}
+    foreach my $i (1 .. $cross_limit) {
+        if (defined($sieve[$i])) {
+            next;
+        }
 
-		for (my $j = 2 * $i * ($i + 1); $j <= $sieve_bound; $j += 2 * $i + 1) {
-			$sieve[$j] = 1;
-		}
-	}
+        for (my $j = 2 * $i * ($i + 1); $j <= $sieve_bound; $j += 2 * $i + 1) {
+            $sieve[$j] = 1;
+        }
+    }
 
-	for (my $i = 1; $i <= $sieve_bound; $i++) {
-		if (defined($sieve[$i])) {
-			next;
-		}
+    for (my $i = 1; $i <= $sieve_bound; $i++) {
+        if (defined($sieve[$i])) {
+            next;
+        }
 
-		push(@primes, 2 * $i + 1);
-	}
+        push(@primes, 2 * $i + 1);
+    }
 
-	return @primes;
+    return @primes;
 }

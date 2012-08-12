@@ -17,25 +17,25 @@ my $sum = 0;
 open INPUT, '<', '22.txt', or die $!;
 
 foreach my $line (<INPUT>) {
-	@names = split(',', $line);
+    @names = split(',', $line);
 }
 
 @names = sort(@names);
 
 for (my $i = 0; $i <= $#names; $i++) {
-	my $worth = 0;
+    my $worth = 0;
 
-	foreach my $c (split('', $names[$i])) {
-		my $ord = ord($c) - $offset;
+    foreach my $c (split('', $names[$i])) {
+        my $ord = ord($c) - $offset;
 
-		if ($ord < 1 || $ord > 26) {
-			next; # skip anything not [A-Z]
-		}
+        if ($ord < 1 || $ord > 26) {
+            next; # skip anything not [A-Z]
+        }
 
-		$worth += $ord;
-	}
+        $worth += $ord;
+    }
 
-	$sum += ($i + 1) * $worth;
+    $sum += ($i + 1) * $worth;
 }
 
 print $sum . "\n";

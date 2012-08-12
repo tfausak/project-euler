@@ -12,40 +12,40 @@ my @perimeters;
 my $max = my $max_p = 0;
 
 foreach my $m (1 .. $limit) {
-	foreach my $n (1 .. $m - 1) {
-		for (my $k = 1; ; $k++) {
-			my $p = $k * 2 * $m * ($m + $n);
+    foreach my $n (1 .. $m - 1) {
+        for (my $k = 1; ; $k++) {
+            my $p = $k * 2 * $m * ($m + $n);
 
-			if ($p > $limit) {
-				last;
-			}
+            if ($p > $limit) {
+                last;
+            }
 
-			my $a = $k * 2 * $m * $n;
-			my $b = $k * ($m ** 2 - $n ** 2);
-			my $c = $k * ($m ** 2 + $n ** 2);
+            my $a = $k * 2 * $m * $n;
+            my $b = $k * ($m ** 2 - $n ** 2);
+            my $c = $k * ($m ** 2 + $n ** 2);
 
-			if ($a > $b) {
-				($a, $b) = ($b, $a);
-			}
+            if ($a > $b) {
+                ($a, $b) = ($b, $a);
+            }
 
-			$triplets{'a' . $a . 'b' . $b . 'c' . $c} = $p;
-		}
-	}
+            $triplets{'a' . $a . 'b' . $b . 'c' . $c} = $p;
+        }
+    }
 }
 
 while (my ($triplet, $perimeter) = each(%triplets)) {
-	$perimeters[$perimeter]++;
+    $perimeters[$perimeter]++;
 }
 
 for (my $perimeter = 0; $perimeter <= $#perimeters; $perimeter++) {
-	if (!defined($perimeters[$perimeter])) {
-		next;
-	}
+    if (!defined($perimeters[$perimeter])) {
+        next;
+    }
 
-	if ($perimeters[$perimeter] > $max) {
-		$max = $perimeters[$perimeter];
-		$max_p = $perimeter;
-	}
+    if ($perimeters[$perimeter] > $max) {
+        $max = $perimeters[$perimeter];
+        $max_p = $perimeter;
+    }
 }
 
 print $max_p . "\n";

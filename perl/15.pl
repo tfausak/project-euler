@@ -16,7 +16,7 @@ my $row = (2 * $size) + 1;
 my $routes = 2 * $size;
 
 for (my $i = 2; $i <= $size; $i++) {
-	$routes *= ($row - $i) / $i;
+    $routes *= ($row - $i) / $i;
 }
 
 print $routes . "\n";
