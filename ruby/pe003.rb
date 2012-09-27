@@ -4,8 +4,8 @@ n /= 2 while n % 2 == 0
 
 factor = 3
 while n != 1
-    n /= factor while n % factor == 0
-    factor += 2
+  n /= factor while n % factor == 0
+  factor += 2
 end
 factor -= 2
 
