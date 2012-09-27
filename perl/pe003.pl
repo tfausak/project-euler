@@ -1,8 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 3
-# by Taylor Fausak
-
+# http://projecteuler.net/problem=3
 # Finds the largest prime factor of 600,851,475,143. Repeated division ensures
 # that each factor found is prime.
 

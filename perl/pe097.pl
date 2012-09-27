@@ -1,8 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 97
-# by Taylor Fausak
-
+# http://projecteuler.net/problem=97
 # Finds the last 10 digits of 28433 * 2 ^ 7830457 + 1.
 
 use strict;

@@ -1,8 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 11
-# by Taylor Fausak
-
+# http://projecteuler.net/problem=11
 # Finds the greatest product of four adjacent numbers in any direction. Starting
 # at the top left, only four directions need to be checked at each point: right,
 # down, down-right, and down-left.
@@ -14,7 +11,7 @@ my @grid;
 my $size = 4;
 my $max = -1;
 
-open(INPUT, '<', $ARGV[0]) or die $!;
+open(INPUT, '<', $ARGV[0]) or die($!);
 
 while (my $line = <INPUT>) {
     $line =~ s/^\s*(\d+)\s*$/$1/; # trim whitespace

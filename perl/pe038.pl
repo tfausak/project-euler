@@ -1,7 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 38
-# by Taylor Fausak
+# http://projecteuler.net/problem=38
 
 use strict;
 use warnings;

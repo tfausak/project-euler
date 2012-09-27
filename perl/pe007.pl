@@ -1,8 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 7
-# by Taylor Fausak
-
+# http://projecteuler.net/problem=7
 # Finds the 10,001st prime number. Uses the following facts:
 #   1 is not prime
 #   All primes except 2 are odd

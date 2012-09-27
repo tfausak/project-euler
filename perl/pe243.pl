@@ -1,7 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 243
-# by Taylor Fausak
+# http://projecteuler.net/problem=243
 
 use strict;
 use warnings;
@@ -54,7 +52,7 @@ sub factor {
             $factors{$factor}++;
         }
     }
-    
+
     return %factors;
 }
 

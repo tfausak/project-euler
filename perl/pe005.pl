@@ -1,8 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 5
-# by Taylor Fausak
-
+# http://projecteuler.net/problem=5
 # Finds the smallest number evenly divisible by every number from 1 to 20.
 # Determines the prime factorization of each number in the range, then
 # multiplies the greatest power of each prime together.
@@ -40,6 +37,6 @@ sub factor {
             $factors{$factor}++;
         }
     }
-    
+
     return %factors;
 }

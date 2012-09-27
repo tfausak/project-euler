@@ -1,8 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 17
-# by Taylor Fausak
-
+# http://projecteuler.net/problem=17
 # Finds the number of letters used if the numbers from 1 to 1000 were written
 # out in words.
 

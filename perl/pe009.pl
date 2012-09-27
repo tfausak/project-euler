@@ -1,8 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 9
-# by Taylor Fausak
-
+# http://projecteuler.net/problem=9
 # Finds the product abc of the Pythagorean triplet where a + b + c = 1000. For
 # two numbers n and m, the following formulas produce a triplet if m > n
 #   a = 2 * m * n

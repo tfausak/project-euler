@@ -1,7 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 51
-# by Taylor Fausak
+# http://projecteuler.net/problem=51
 
 use strict;
 use warnings;
@@ -13,7 +11,7 @@ foreach my $n (10000 .. 99999) {
     if (!is_prime($n)) {
         next;
     }
-    
+
     push(@primes, $n);
 }
 

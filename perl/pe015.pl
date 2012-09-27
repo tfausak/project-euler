@@ -1,8 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 15
-# by Taylor Fausak
-
+# http://projecteuler.net/problem=15
 # Finds the number of routes (without backtracking) along the edges of a
 # 20x20 grid. For an nxn grid, the number of routes is the center number of
 # the (2n + 1)th row of Pascal's triangle. That value can be solved for

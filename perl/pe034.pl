@@ -1,8 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 34
-# by Taylor Fausak
-
+# http://projecteuler.net/problem=34
 # Finds the sum of all numbers equal to the sum of the factorial of their
 # digits. Numbers of this form are called factorions. It's worth noting that
 # there are only four factorions: 1, 2, 145, and 40585. This pre-computes all

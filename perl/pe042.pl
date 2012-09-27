@@ -1,7 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 42
-# by Taylor Fausak
+# http://projecteuler.net/problem=42
 
 use strict;
 use warnings;
@@ -10,7 +8,7 @@ my $offset = 64;
 my @words;
 my $count = 0;
 
-open INPUT, '<', '42.txt', or die $!;
+open(INPUT, '<', $ARGV[0]) or die($!);
 
 foreach my $line (<INPUT>) {
     @words = split(',', $line);

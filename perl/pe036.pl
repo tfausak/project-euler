@@ -1,8 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 36
-# by Taylor Fausak
-
+# http://projecteuler.net/problem=36
 # Finds the sum of all numbers below one million that are palindromic in both
 # base 10 and base 2. Simple brute-force approach, although it only checks odd
 # numbers since an even number represented in binary is 1...0.

@@ -1,8 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 57
-# by Taylor Fausak
-
+# http://projecteuler.net/problem=57
 # Series is 3/2, 7/5, 17/12, ... . Let n and d be the numerator and denominator,
 # respectively. Then the series is n/d, (n+2d)/(n+d), ... .
 

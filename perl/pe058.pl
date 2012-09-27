@@ -1,8 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 58
-# by Taylor Fausak
-
+# http://projecteuler.net/problem=58
 # Similar to problem 28.
 #   bottom right: n^2
 #   bottom left: n^2 - (n- 1)

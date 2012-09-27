@@ -1,8 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 79
-# by Taylor Fausak
-
+# http://projecteuler.net/problem=79
 # Assumes the passcode has no repeating digits.
 
 use strict;
@@ -12,7 +9,7 @@ my %nodes;
 my @s;
 my $result = '';
 
-open(INPUT, '<', $ARGV[0]) or die $!;
+open(INPUT, '<', $ARGV[0]) or die($!);
 
 while (my $line = <INPUT>) {
     $line =~ s/^\s*(\d+)\s*$/$1/; # trim whitespace

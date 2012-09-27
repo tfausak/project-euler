@@ -1,14 +1,12 @@
 #!/usr/bin/perl
-
-# Project Euler problems 18 & 67
-# by Taylor Fausak
+# http://projecteuler.net/problem=18 & http://projecteuler.net/problem=67
 
 use strict;
 use warnings;
 
 my @triangle;
 
-open INPUT, '<', $ARGV[0], or die $!;
+open(INPUT, '<', $ARGV[0]) or die($!);
 
 foreach my $row (<INPUT>) {
     push(@triangle, [split(' ', $row)]);

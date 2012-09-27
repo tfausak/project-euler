@@ -1,8 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 20
-# by Taylor Fausak
-
+# http://projecteuler.net/problem=20
 # Finds the sum of the digits of 100! (100 factorial). Similar to problem number
 # 16, which sums the digits of 2^1000.
 

@@ -1,11 +1,12 @@
 #!/usr/bin/perl
+# http://projecteuler.net/problem=81
 
 use strict;
 use warnings;
 
 my @matrix;
 
-open INPUT, '<', $ARGV[0], or die $!;
+open(INPUT, '<', $ARGV[0]) or die($!);
 
 foreach my $row (<INPUT>) {
     chomp($row);

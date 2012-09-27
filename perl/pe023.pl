@@ -1,8 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 23
-# by Taylor Fausak
-
+# http://projecteuler.net/problem=23
 # Finds the sum of all the positive integers which cannot be written as the
 # sum of two abundant numbers. The aliquot sum of an abundant number is
 # greater than the number. The sum of all the integers from 1 to n is

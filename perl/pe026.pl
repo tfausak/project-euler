@@ -1,10 +1,7 @@
 #!/usr/bin/perl
-
-# Project Euler problem 26
-# by Taylor Fausak
-
+# http://projecteuler.net/problem=26
 # Finds the value of d < 1000 for which 1 / d contains the longest recurring
-# cycle. Sieves to find all the primes under the limit. Starting from the 
+# cycle. Sieves to find all the primes under the limit. Starting from the
 # largest prime, searches for a full reptend prime ("a prime p is full reptend
 # iff 10 is a primitive root modulo p"). If prime p is full reptend, then 1 / p
 # will have p - 1 repeating digits.

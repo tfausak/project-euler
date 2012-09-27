@@ -1,8 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 10
-# by Taylor Fausak
-
+# http://projecteuler.net/problem=10
 # Finds the sum of all the primes below two million. Uses the Sieve of
 # Eratosthenes on odd numbers. I can't take credit for the algorithm; it's from
 # the Project Euler PDF.

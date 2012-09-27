@@ -1,4 +1,5 @@
 #!/usr/bin/perl
+# http://projecteuler.net/problem=92
 
 use strict;
 use warnings;

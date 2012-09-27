@@ -1,8 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 16
-# by Taylor Fausak
-
+# http://projecteuler.net/problem=16
 # Finds the sum of the digits of 2^1000. Straightforward application of bigint.
 
 use strict;

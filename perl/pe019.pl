@@ -1,8 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 19
-# by Taylor Fausak
-
+# http://projecteuler.net/problem=19
 # Finds the number of months that started with a Sunday from 1 Jan 1901 to
 # 31 Dec 2000. Calculates the Julian Day Number (JDN) of the first of every
 # month and checks to see if it corresponds to a Sunday.

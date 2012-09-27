@@ -1,4 +1,5 @@
 #!/usr/bin/perl
+# http://projecteuler.net/problem=99
 
 use strict;
 use warnings;
@@ -6,7 +7,7 @@ use warnings;
 my $max = my $answer = 0;
 my $l = 1;
 
-open(INPUT, '<', $ARGV[0]) or die $!;
+open(INPUT, '<', $ARGV[0]) or die($!);
 
 while (my $line = <INPUT>) {
     my ($a, $b) = split(',', $line);

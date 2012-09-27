@@ -1,8 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 25
-# by Taylor Fausak
-
+# http://projecteuler.net/problem=25
 # Finds the first term in the Fibonacci sequence with 1000 digits. A number
 # with n digits is greater than 10^(n-1). The nth Fibonacci number, F(n),
 # is given by

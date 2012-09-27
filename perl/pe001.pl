@@ -1,13 +1,8 @@
 #!/usr/bin/perl
-
-# Project Euler problem 1
-# by Taylor Fausak
-
+# http://projecteuler.net/problem=1
 # Finds the sum of all the multiples of 3 or 5 below 1,000. If a1 is the first
 # term and d is the common difference, the sum of the arithmetic progression is
 #   S(n) = n * (2 * a1 + (n - 1) * d) / 2
-
-# Run like this: tmp.pl 999 3 5
 
 use strict;
 use warnings;

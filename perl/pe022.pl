@@ -1,8 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 22
-# by Taylor Fausak
-
+# http://projecteuler.net/problem=22
 # Finds the sum of all the name scores in the input file. A name score is
 # calculated by the sum of the numerical values of the letters (A = 1,
 # B = 2, ...) multiplied by the name's position in the list.
@@ -14,7 +11,7 @@ my $offset = 64;
 my @names;
 my $sum = 0;
 
-open INPUT, '<', '22.txt', or die $!;
+open(INPUT, '<', $ARGV[0]) or die($!);
 
 foreach my $line (<INPUT>) {
     @names = split(',', $line);

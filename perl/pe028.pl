@@ -1,8 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 28
-# by Taylor Fausak
-
+# http://projecteuler.net/problem=28
 # Finds the sum of both diagonals in a 1001x1001 numerical spiral. By
 # mathematical analysis, the numbers in the corners of an n-by-n spiral are
 #   top right: n^2

@@ -1,8 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 14
-# by Taylor Fausak
-
+# http://projecteuler.net/problem=14
 # Finds the starting number below 1 million that produces the longest chain
 # following the Collatz sequence.
 

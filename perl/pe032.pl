@@ -1,8 +1,5 @@
 #!/usr/bin/perl
-
-# Project Euler problem 32
-# by Taylor Fausak
-
+# http://projecteuler.net/problem=32
 # Finds the sum of all products whose multiplicand/multiplier/product identity
 # can be written as a 1 through 9 pandigital. Products of that form must have
 # exactly four digits (d * dddd = dddd or dd * ddd = dddd).
