@@ -1,11 +1,9 @@
 # http://projecteuler.net/problem=9
-(3..997).each do |c|
-  (2..c).each do |b|
-    (1..b).each do |a|
-      next unless a + b + c == 1_000
-      next unless a ** 2 + b ** 2 == c ** 2
-      puts a * b * c
-      exit
-    end
+(1..332).each do |a|
+  (a..(999 - a) / 2).each do |b|
+    c = 1000 - b - a
+    next unless a ** 2 + b ** 2 == c ** 2
+    puts a * b * c
+    exit
   end
 end
