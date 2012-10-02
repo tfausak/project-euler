@@ -14,4 +14,4 @@ def is_prime(n)
   true
 end
 
-puts (1..2_000_000).find_all { |n| is_prime(n) }.inject { |sum, n| sum + n }
+puts((1..2_000_000).find_all { |n| is_prime(n) }.inject { |sum, n| sum + n })
