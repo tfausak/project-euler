@@ -4,9 +4,7 @@
 size = 4
 max = 0
 
-grid = File.read(ARGV[0]).map do |line|
-  line.split.map { |number| number.to_i }
-end
+grid = File.read(ARGV[0]).map { |line| line.split.map { |n| n.to_i } }
 
 grid.each_with_index do |row, i|
   row.each_with_index do |cell, j|
