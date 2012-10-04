@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 # http://projecteuler.net/problem=4
+
 max = 0
 999.downto(900).each do |x|
   x.downto(900).each do |y|

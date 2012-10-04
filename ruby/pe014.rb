@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 # http://projecteuler.net/problem=14
+
 collatz, max_n, max_steps = {}, 0, 0
 (1..1_000_000).each do |n|
   steps, x = 1, n

@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 # http://projecteuler.net/problem=5
+
 def factor(n)
   factors = Hash.new(0)
   (2..n).each do |divisor|
