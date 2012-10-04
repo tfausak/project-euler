@@ -1,18 +1,25 @@
 #!/usr/bin/env ruby
 # http://projecteuler.net/problem=10
-def is_prime(n)
-  return false if n == 1
-  return true if n < 4
-  return false if n % 2 == 0
-  return true if n < 9
-  return false if n % 3 == 0
 
-  (5..Math.sqrt(n)).step(6).each do |x|
-    return false if n % x == 0
-    return false if n % (x + 2) == 0
+def sieve(limit)
+  sieve_bound = (limit - 1) / 2
+  cross_limit = (Math.sqrt(limit) - 1) / 2
+  sieve = {}
+  primes = [2]
+
+  (1..cross_limit).each do |n|
+    next if sieve.has_key? n
+    (2 * n * (n + 1)..sieve_bound).step(2 * n + 1).each do |m|
+      sieve[m] = true
+    end
   end
 
-  true
+  (1..sieve_bound).each do |n|
+    next if sieve.has_key? n
+    primes << 2 * n + 1
+  end
+
+  primes
 end
 
-puts((1..2_000_000).find_all { |n| is_prime(n) }.inject { |sum, n| sum + n })
+puts sieve(2_000_000).reduce(:+)
