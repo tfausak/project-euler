@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # http://projecteuler.net/problem=8
 # Finds the greatest product of five consecutive digits in a number. Simply
 # makes the number a string and moves through it.

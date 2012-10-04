@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # http://projecteuler.net/problem=79
 # Assumes the passcode has no repeating digits.
 

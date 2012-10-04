@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # http://projecteuler.net/problem=26
 # Finds the value of d < 1000 for which 1 / d contains the longest recurring
 # cycle. Sieves to find all the primes under the limit. Starting from the

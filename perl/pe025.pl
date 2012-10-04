@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # http://projecteuler.net/problem=25
 # Finds the first term in the Fibonacci sequence with 1000 digits. A number
 # with n digits is greater than 10^(n-1). The nth Fibonacci number, F(n),

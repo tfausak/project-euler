@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # http://projecteuler.net/problem=16
 # Finds the sum of the digits of 2^1000. Straightforward application of bigint.
 

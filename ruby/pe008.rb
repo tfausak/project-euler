@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 # http://projecteuler.net/problem=8
 number = File.read(ARGV[0]).inject { |number, line| number += line.chomp }
 max = 0

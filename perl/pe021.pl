@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # http://projecteuler.net/problem=21
 # Finds the sum of all amicable numbers under 10,000. Generates an array where
 # the key is the number and the value is its aliquot sum.

@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # http://projecteuler.net/problem=12
 # Finds the first triangle number to have over 500 divisors. This is NOT the
 # fastest way to do so. Faster algorithms require pre-computing a list of primes

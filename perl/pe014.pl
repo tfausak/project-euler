@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # http://projecteuler.net/problem=14
 # Finds the starting number below 1 million that produces the longest chain
 # following the Collatz sequence.

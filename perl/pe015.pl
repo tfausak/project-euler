@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # http://projecteuler.net/problem=15
 # Finds the number of routes (without backtracking) along the edges of a
 # 20x20 grid. For an nxn grid, the number of routes is the center number of

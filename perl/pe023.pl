@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # http://projecteuler.net/problem=23
 # Finds the sum of all the positive integers which cannot be written as the
 # sum of two abundant numbers. The aliquot sum of an abundant number is

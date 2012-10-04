@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # http://projecteuler.net/problem=30
 # Finds the sum of all the numbers that can be written as the sum of fifth
 # powers of their digits. A number n is the sum of its digits raised to the

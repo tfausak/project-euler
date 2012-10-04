@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # http://projecteuler.net/problem=1
 # Finds the sum of all the multiples of 3 or 5 below 1,000. If a1 is the first
 # term and d is the common difference, the sum of the arithmetic progression is

@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # http://projecteuler.net/problem=4
 # Finds the largest palindromic number that is the product of two three-digit
 # numbers. At least one operand must be a multiple of 11, since

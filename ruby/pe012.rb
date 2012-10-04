@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 # http://projecteuler.net/problem=12
 def divisors (n)
   result = 2

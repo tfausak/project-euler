@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # http://projecteuler.net/problem=18 & http://projecteuler.net/problem=67
 
 use strict;

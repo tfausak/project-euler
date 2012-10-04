@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # http://projecteuler.net/problem=17
 # Finds the number of letters used if the numbers from 1 to 1000 were written
 # out in words.

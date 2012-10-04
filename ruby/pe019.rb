@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 # http://projecteuler.net/problem=19
 require 'date'
 

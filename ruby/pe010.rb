@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 # http://projecteuler.net/problem=10
 def is_prime(n)
   return false if n == 1

@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # http://projecteuler.net/problem=58
 # Similar to problem 28.
 #   bottom right: n^2

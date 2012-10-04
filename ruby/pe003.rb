@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 # http://projecteuler.net/problem=3
 n = 600_851_475_143
 n /= 2 while n % 2 == 0

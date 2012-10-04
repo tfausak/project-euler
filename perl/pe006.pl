@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # http://projecteuler.net/problem=6
 # Finds the difference between the sum of squares of the first 100 natural
 # numbers and the square of the sum. The sum of the natural numbers from 1 to n

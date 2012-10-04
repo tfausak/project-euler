@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # http://projecteuler.net/problem=2
 # Finds the sum of all even Fibonacci terms less than four million. Every third
 # term of the Fibonacci series is odd. That is, if x and y are odd, then the

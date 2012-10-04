@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # http://projecteuler.net/problem=22
 # Finds the sum of all the name scores in the input file. A name score is
 # calculated by the sum of the numerical values of the letters (A = 1,

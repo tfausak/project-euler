@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 # http://projecteuler.net/problem=20
 factorial = (1..100).inject { |factorial, n| factorial * n }
 sum = 0

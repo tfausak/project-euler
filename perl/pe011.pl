@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # http://projecteuler.net/problem=11
 # Finds the greatest product of four adjacent numbers in any direction. Starting
 # at the top left, only four directions need to be checked at each point: right,

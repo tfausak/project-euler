@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # http://projecteuler.net/problem=97
 # Finds the last 10 digits of 28433 * 2 ^ 7830457 + 1.
 

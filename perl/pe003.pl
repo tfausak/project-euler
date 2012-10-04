@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # http://projecteuler.net/problem=3
 # Finds the largest prime factor of 600,851,475,143. Repeated division ensures
 # that each factor found is prime.

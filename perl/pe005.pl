@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # http://projecteuler.net/problem=5
 # Finds the smallest number evenly divisible by every number from 1 to 20.
 # Determines the prime factorization of each number in the range, then

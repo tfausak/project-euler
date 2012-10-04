@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # http://projecteuler.net/problem=13
 # Finds the first ten digits of the sum of a bunch of 50-digit numbers. Avoids
 # dealing with big integers by making a 2-dimensional array of digits. Given

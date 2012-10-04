@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # http://projecteuler.net/problem=7
 # Finds the 10,001st prime number. Uses the following facts:
 #   1 is not prime

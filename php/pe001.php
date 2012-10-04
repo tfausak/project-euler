@@ -1,3 +1,4 @@
+#!/usr/bin/env php
 <?php
 
 # http://projecteuler.net/problem=1

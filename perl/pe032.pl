@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # http://projecteuler.net/problem=32
 # Finds the sum of all products whose multiplicand/multiplier/product identity
 # can be written as a 1 through 9 pandigital. Products of that form must have
