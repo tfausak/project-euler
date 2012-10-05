@@ -3,7 +3,7 @@
 
 def aliquot_sum(n)
   sqrt = Math.sqrt(n)
-  return (2..sqrt).select { |d| n % d == 0 }.reduce(n == 1 ? 0 : 1) do |sum, d|
+  (2..sqrt).select { |d| n % d == 0 }.reduce(n == 1 ? 0 : 1) do |sum, d|
     sum + d + (d == sqrt ? 0 : n / d)
   end
 end
