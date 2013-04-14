@@ -29,6 +29,18 @@ func BenchmarkIsPalindrome(b *testing.B) {
 	}
 }
 
+// IsPrime
+func ExampleIsPrime() {
+	fmt.Println(IsPrime(541))
+	// Output: true
+}
+
+func BenchmarkIsPrime(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		IsPrime(541)
+	}
+}
+
 // Reverse
 func ExampleReverse() {
 	fmt.Println(Reverse("Hello, world!"))

@@ -1,3 +1,4 @@
+// http://projecteuler.net/problem=6
 package main
 
 import "fmt"
