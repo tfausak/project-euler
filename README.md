@@ -6,7 +6,7 @@ Featuring solutions in:
 -   [Haskell][]: `ghc pe001.hs && ./pe001`
 -   [Java][]: `javac pe001.java && java pe001`
 -   [JavaScript][]: `node pe001.js`
--   [Perl][]: `perl pe001.perl`
+-   [Perl][]: `perl pe001.pl`
 -   [PHP][]: `php pe001.php`
 -   [Python][]: `python pe001.py`
 -   [Ruby][]: `ruby pe001.rb`
