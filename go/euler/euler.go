@@ -57,3 +57,31 @@ func IsPrime(n int) bool {
 
 	return true
 }
+
+// Sieve
+func Sieve(limit int) []int {
+	sieve_bound := (limit - 1) / 2
+	cross_limit := int(math.Sqrt(float64(limit))-1) / 2
+	sieve := make(map[int]bool)
+	primes := []int{2}
+
+	for i := 1; i <= cross_limit; i++ {
+		if sieve[i] {
+			continue
+		}
+
+		for j := 2 * i * (i + 1); j < sieve_bound; j += 2*i + 1 {
+			sieve[j] = true
+		}
+	}
+
+	for i := 1; i < sieve_bound; i++ {
+		if sieve[i] {
+			continue
+		}
+
+		primes = append(primes, 2*i+1)
+	}
+
+	return primes
+}
