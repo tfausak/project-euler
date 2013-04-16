@@ -21,7 +21,14 @@ func Factor(n int) (factors map[int]int) {
 
 // IsPalindrome returns true if the string is palindromic.
 func IsPalindrome(s string) bool {
-	return s == Reverse(s)
+	runes := []rune(s)
+	length := len(runes)
+	for index, rune := range runes {
+		if rune != runes[length-index-1] {
+			return false
+		}
+	}
+	return true
 }
 
 // IsPrime
