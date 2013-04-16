@@ -40,15 +40,3 @@ func BenchmarkIsPrime(b *testing.B) {
 		IsPrime(541)
 	}
 }
-
-// Reverse
-func ExampleReverse() {
-	fmt.Println(Reverse("Hello, world!"))
-	// Output: !dlrow ,olleH
-}
-
-func BenchmarkReverse(b *testing.B) {
-	for i := 0; i < b.N; i++ {
-		Reverse("Hello, world!")
-	}
-}
