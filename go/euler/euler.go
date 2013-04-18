@@ -4,6 +4,20 @@ package euler
 
 import "math"
 
+// Divisors
+func Divisors(n int) []int {
+	divisors := []int{}
+	for i := 1; i <= int(math.Sqrt(float64(n))); i++ {
+		if n%i == 0 {
+			divisors = append(divisors, i)
+			if n/i != i {
+				divisors = append(divisors, n/i)
+			}
+		}
+	}
+	return divisors
+}
+
 // Factor
 func Factor(n int) (factors map[int]int) {
 	factors = make(map[int]int)
@@ -84,4 +98,13 @@ func Sieve(limit int) []int {
 	}
 
 	return primes
+}
+
+// Triangle
+func Triangle() func() int {
+	n, sum := 1, 0
+	return func() int {
+		n, sum = n+1, sum+n
+		return sum
+	}
 }

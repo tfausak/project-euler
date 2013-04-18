@@ -5,6 +5,18 @@ import (
 	"testing"
 )
 
+// Divisors
+func ExampleDivisors() {
+	fmt.Println(Divisors(12))
+	// Output: [1 12 2 6 3 4]
+}
+
+func BenchmarkDivisors(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Divisors(12)
+	}
+}
+
 // Factor
 func ExampleFactor() {
 	fmt.Println(Factor(12))
@@ -50,5 +62,26 @@ func ExampleSieve() {
 func BenchmarkSieve(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		Sieve(50)
+	}
+}
+
+// Triangle
+func ExampleTriangle() {
+	triangle := Triangle()
+	triangles := make([]int, 10)
+	for i := 0; i < len(triangles); i++ {
+		triangles[i] = triangle()
+	}
+	fmt.Println(triangles)
+	// Output: [1 3 6 10 15 21 28 36 45 55]
+}
+
+func BenchmarkTriangle(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		triangle := Triangle()
+		triangles := make([]int, 10)
+		for i := 0; i < len(triangles); i++ {
+			triangles[i] = triangle()
+		}
 	}
 }
