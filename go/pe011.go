@@ -42,8 +42,12 @@ func main() {
 	max := big.NewInt(0)
 	size := 4
 	for row := 0; row < len(grid); row++ {
-		for column := 0; column < len(grid[row]); column++ {
-			if row+size > len(grid) || column+size > len(grid[row]) || column < size {
+		if row+size > len(grid) {
+			continue
+		}
+
+		for column := size; column < len(grid[row]); column++ {
+			if column+size > len(grid[row]) {
 				continue
 			}
 
