@@ -2,7 +2,9 @@
 // Euler problems.
 package euler
 
-import "math"
+import (
+	"math"
+)
 
 // Divisors
 func Divisors(n int) []int {

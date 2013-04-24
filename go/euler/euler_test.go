@@ -2,6 +2,7 @@ package euler
 
 import (
 	"fmt"
+	"math"
 	"testing"
 )
 
@@ -19,8 +20,12 @@ func BenchmarkDivisors(b *testing.B) {
 
 // Factor
 func ExampleFactor() {
-	fmt.Println(Factor(12))
-	// Output: map[2:2 3:1]
+	n := 1
+	for k, v := range Factor(12) {
+		n *= int(math.Pow(float64(k), float64(v)))
+	}
+	fmt.Println(n)
+	// Output: 12
 }
 
 func BenchmarkFactor(b *testing.B) {
