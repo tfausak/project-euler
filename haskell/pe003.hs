@@ -9,5 +9,4 @@ prime n = [d | d <- [1 .. bound n], rem n d == 0] == [1]
 factors :: Int -> [Int]
 factors n = [d | d <- [1 .. bound n], rem n d == 0, prime d]
 
-main = do
-    putStrLn . show . maximum . factors $ 600851475143
+main = print . maximum . factors $ 600851475143

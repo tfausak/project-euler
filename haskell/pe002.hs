@@ -6,6 +6,5 @@ fibonacci n
     | n == 1 = 1
     | otherwise = fibonacci (n - 1) + fibonacci (n - 2)
 
-main = do
-    putStrLn . show $ sum (takeWhile
+main = print $ sum (takeWhile
         (< 4000000) [n | n <- [fibonacci n | n <- [1 ..]], even n])
