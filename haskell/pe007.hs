@@ -1,6 +1,4 @@
 -- http://projecteuler.net/problem=7
+import Euler (isPrime)
 
-prime :: Int -> Bool
-prime n = [d | d <- [1 .. floor . sqrt . fromIntegral $ n], rem n d == 0] == [1]
-
-main = print $ [n | n <- [1 ..], prime n] !! 10001
+main = print $ [n | n <- [1 ..], isPrime n] !! 10001
