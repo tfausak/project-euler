@@ -4,7 +4,7 @@ Featuring solutions in:
 
 -   [Clojure][]: `clj pe001.clj`
 -   [Go][]: `go run pe001.go`
--   [Haskell][]: `ghc pe001.hs && ./pe001`
+-   [Haskell][]: `runghc pe001.hs`
 -   [Java][]: `javac pe001.java && java pe001`
 -   [JavaScript][]: `node pe001.js`
 -   [Perl][]: `perl pe001.pl`
