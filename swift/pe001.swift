@@ -1,9 +1,6 @@
 // http://projecteuler.net/problem=1
 
-var sum = 0
-for n in 1..1000 {
-    if n % 3 == 0 || n % 5 == 0 {
-        sum += n
-    }
-}
+let sum = Array(1..1000)
+    .filter { $0 % 3 == 0 || $0 % 5 == 0 }
+    .reduce(0, +)
 println(sum)
