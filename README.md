@@ -11,6 +11,7 @@ Featuring solutions in:
 -   [PHP][]: `php pe001.php`
 -   [Python][]: `python pe001.py`
 -   [Ruby][]: `ruby pe001.rb`
+-   [Swift][]
 
 [project euler]: http://projecteuler.net
 [clojure]: http://clojure.org
@@ -22,3 +23,4 @@ Featuring solutions in:
 [php]: http://us.php.net
 [python]: http://www.python.org
 [ruby]: http://www.ruby-lang.org/en/
+[swift]: https://developer.apple.com/swift/
