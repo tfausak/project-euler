@@ -14,9 +14,9 @@ main = do
 euler8 :: String -> Int
 euler8 x
     = maximum
-    . map product
-    . takes 13
-    . map digitToInt
+    $ map product
+    $ takes 13
+    $ map digitToInt
     $ filter isDigit x
 -- euler8 = maximum . map product . takes 13 . map digitToInt . filter isDigit
 
