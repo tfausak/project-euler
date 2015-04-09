@@ -1,16 +1,26 @@
--- http://projecteuler.net/problem=8
+-- | http://projecteuler.net/problem=8
+module Euler8 where
 
 import Data.Char (digitToInt, isDigit)
+-- import Data.List (tails)
 
+main :: IO ()
 main = do
-    contents <- getContents
-    print $
-     maximum $
-      map product $
-       takes 5 $
-        map digitToInt $
-         filter isDigit contents
+    input <- getContents
+    let output = euler8 input
+    print output
+-- main = getContents >>= print . euler8
+
+euler8 :: String -> Int
+euler8 x
+    = maximum
+    . map product
+    . takes 13
+    . map digitToInt
+    $ filter isDigit x
+-- euler8 = maximum . map product . takes 13 . map digitToInt . filter isDigit
 
 takes :: Int -> [a] -> [[a]]
 takes _ [] = []
-takes n xs = take n xs : takes n (tail xs)
+takes n xs@(_ : ys) = take n xs : takes n ys
+-- takes n = map (take n) . tails
