@@ -2,25 +2,28 @@
 module Euler8 where
 
 import Data.Char (digitToInt, isDigit)
--- import Data.List (tails)
+import Data.List (tails)
 
-main :: IO ()
+main, main' :: IO ()
 main = do
     input <- getContents
-    let output = euler8 input
+    let output = euler8 13 input
     print output
--- main = getContents >>= print . euler8
 
-euler8 :: String -> Int
-euler8 x
+main' = getContents >>= print . euler8 13
+
+euler8, euler8' :: Int -> String -> Int
+euler8 n x
     = maximum
     $ map product
-    $ takes 13
+    $ takes n
     $ map digitToInt
     $ filter isDigit x
--- euler8 = maximum . map product . takes 13 . map digitToInt . filter isDigit
 
-takes :: Int -> [a] -> [[a]]
-takes _ [] = []
+euler8' n = maximum . map product . takes n . map digitToInt . filter isDigit
+
+takes, takes' :: Int -> [a] -> [[a]]
+takes _ [] = [[]]
 takes n xs@(_ : ys) = take n xs : takes n ys
--- takes n = map (take n) . tails
+
+takes' n = map (take n) . tails
