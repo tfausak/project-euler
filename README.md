@@ -2,7 +2,7 @@ My solutions to [Project Euler][] problems.
 
 Featuring solutions in:
 
--   [Clojure][]: `clj pe001.clj`
+-   [Clojure][]: `cd clojure && lein run -m euler.problems.1 1000`
 -   [Go][]: `go run pe001.go`
 -   [Haskell][]: `runghc pe001.hs`
 -   [Java][]: `javac pe001.java && java pe001`
